@@ -17,7 +17,8 @@ $ pip3 install opencv-python
 ```
 $ pip3 install -U albumentations
 ```
-- A labeled DataSet in YoloV8 format (you can make your own using Roboflow, for example)
+- A labeled DataSet in YoloV8 format (you can make your own using Roboflow, for example). It should look like this:
+![dataset.png](docs/dataset.png)
 
 ## Utilization
 - Create a directory on the project's root folder called "images", if there isn't one already.
@@ -25,8 +26,10 @@ $ pip3 install -U albumentations
 $ mkdir images
 ```
 - Place both dataset images (train/images/) and label text files (train/labels/) inside the "images" folder, everything together.
+![images_move.gif](docs/images_move.gif)
 
 - Place the "data.yaml" file from the dataset inside the project's root folder.
+![data_move.gif](docs/data_move.gif)
 
 - Now, you can choose the transformation functions from Albumentations that are going to be applied to your dataset. Open the "main.py" file and you'll see a declared object called "transform", like this:
 
