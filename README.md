@@ -18,6 +18,7 @@ $ pip3 install opencv-python
 $ pip3 install -U albumentations
 ```
 - A labeled DataSet in YoloV8 format (you can make your own using Roboflow, for example). It should look like this:
+
 ![dataset.png](docs/dataset.png)
 
 ## Utilization
