@@ -72,9 +72,9 @@ for image_name in image_names:
                 
 
                 if j == len(transformed_bboxes) - 1:
-                    f.write(f"{label_names[transformed_bboxes[j][4]]} {transformed_bboxes[j][0]} {transformed_bboxes[j][1]} {transformed_bboxes[j][2]} {transformed_bboxes[j][3]}")
+                    f.write(f"{transformed_bboxes[j][4]} {transformed_bboxes[j][0]} {transformed_bboxes[j][1]} {transformed_bboxes[j][2]} {transformed_bboxes[j][3]}")
                 else:
-                    f.write(f"{label_names[transformed_bboxes[j][4]]} {transformed_bboxes[j][0]} {transformed_bboxes[j][1]} {transformed_bboxes[j][2]} {transformed_bboxes[j][3]}\n")
+                    f.write(f"{transformed_bboxes[j][4]} {transformed_bboxes[j][0]} {transformed_bboxes[j][1]} {transformed_bboxes[j][2]} {transformed_bboxes[j][3]}\n")
 
         cv.imwrite(f"transformed_images/{image_name}_{i}.jpg", transformed_image)
 
